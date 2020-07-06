@@ -17,3 +17,5 @@ In ConfigureServices() method add authentication schema for cookies authenticati
 In the Home controller, decorate one of the action method with [Authorize] attribute.
 
 In the action method we which we added in cookie login path; create claims/claimidentity/claimprincipal.
+
+Once we call HttpContext.SignInAsync() a new cookie is created and this means the user is now authenticated.
